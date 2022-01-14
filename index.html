@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: The Position property</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article class="container">
+        <div class="header-container">
+            <h1 class="header">CSS: Positioning</h1>
+            <p>The <code class="code">position</code> property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+        </div>
+        <div class="table-container">
+            <table class="table-content">
+                <thead>
+                    <tr>
+                        <th class="table-title">Method</th>
+                        <th class="table-title">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- static -->
+                    <tr>
+                        <td class="left-col">
+                            <div>
+                                <code class="code">static</code>
+                            </div>
+                        </td>
+                        <td class="right-col">
+                            <p>HTML elements are positioned static by default.</p>
+                            <p>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+                            <p>An element with <code class="code">position: static;</code> is not positioned in any special way; it is always positioned according to the normal flow of the page</p>
+                        </td>
+                    </tr>
+                    <!-- relative -->
+                    <tr>
+                        <td class="left-col">
+                            <div>
+                                <code class="code">relative</code>
+                            </div>
+                        </td>
+                        <td class="right-col">
+                            <p>An element with <code class="code">position: relative;</code> is positioned relative to its normal position.</p>
+                            <p>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+                        </td>
+                    </tr>
+                    <!-- fixed -->
+                    <tr>
+                        <td class="left-col">
+                            <div>
+                                <code class="code">fixed</code>
+                            </div>
+                        </td>
+                        <td class="right-col">
+                            <p>An element with <code class="code">position: fixed;</code> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</p>
+                            <p>A fixed element does not leave a gap in the page where it would normally have been located.</p>
+                        </td>
+                    </tr>
+                    <!-- absolute -->
+                    <tr>
+                        <td class="left-col">
+                            <div>
+                                <code class="code">absolute</code>
+                            </div>
+                        </td>
+                        <td class="right-col">
+                            <p>An element with <code class="code">position: absolute;</code> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</p>
+                            <p>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+                            <p><b>Note</b>: Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+                        </td>
+                    </tr>
+                    <!-- sticky -->
+                    <tr>
+                        <td class="left-col">
+                            <div>
+                                <code class="code">sticky</code>
+                            </div>
+                        </td>
+                        <td class="right-col">
+                            <p>An element with <code class="code">position: sticky;</code> is positioned based on the user's scroll position.</p>
+                            <p>A sticky element toggles between <code class="code">relative</code> and <code class="code">fixed</code>, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="notes" colspan="2"><b>Note</b>: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of <code class="code">top</code> , <code class="code">right</code>, <code class="code">bottom</code> or <code class="code">left</code> for sticky positioning to work.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </article>
+    <footer>
+        <p>Code by <span>moshmoshca</span></p>
+    </footer>
+</body>
+</html>
